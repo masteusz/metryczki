@@ -74,18 +74,9 @@ def create_table(
                 MultiColumn(size=3, align="l", data=FootnoteText("Podpis zawodnika")),
             )
         )
-        table.add_hline(1, 3)
-        table.add_hline(5, 7)
-        table.add_hline(10, 12)
-        table.add_row(
-            (
-                MultiColumn(size=3, align="|l|", data=FootnoteText("")),
-                MultiColumn(size=1, align="l", data=FootnoteText("")),
-                MultiColumn(size=3, align="|l|", data=FootnoteText("")),
-                MultiColumn(size=2, align="l", data=FootnoteText("")),
-                MultiColumn(size=3, align="|l|", data=FootnoteText("")),
-            )
-        )
+        table.add_row((MultiColumn(size=12, align="l", data=""),))
+        table.add_row((MultiColumn(size=12, align="l", data=""),))
+
         table.add_hline(1, 3)
         table.add_hline(5, 7)
         table.add_hline(10, 12)
